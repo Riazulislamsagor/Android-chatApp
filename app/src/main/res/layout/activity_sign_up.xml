@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:background="@color/lightgray"
+    tools:context=".SignUpActivity">
+
+
+    <ImageView
+        android:id="@+id/signupimageView"
+        android:layout_width="match_parent"
+        android:layout_height="272dp"
+        app:srcCompat="@drawable/whatsapp" />
+
+    <EditText
+
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:hint=" Enter user name"
+        android:id="@+id/signupeditname"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:textColor="@color/black"
+
+        android:background="@color/white"
+        android:hint=" Enter user email"
+        android:layout_marginTop="10dp"
+        android:id="@+id/signupeditemail"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:textColor="@color/black"
+
+        android:background="@color/white"
+        android:hint=" Enter password "
+        android:layout_marginTop="10dp"
+        android:id="@+id/signupeditPassword"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="textPassword" />
+    <TextView
+        android:id="@+id/signuptext"
+        android:textColor="@color/black"
+        android:gravity="end"
+        android:text="Already Have Account? "
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/signupbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Sign Up"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/signupgoogleid"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:text="Google"
+            android:src="@drawable/google"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <ImageView
+            android:id="@+id/signupfacebookid"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:textStyle="bold"
+            android:src="@drawable/facebook"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/signupphneid"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="SignUp with Phone "
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

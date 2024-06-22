@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="7dp"
+        android:maxHeight="400dp"
+        android:maxWidth="310dp"
+        android:minHeight="30dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/bg_sender"
+        android:layout_marginTop="5dp">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/sendergideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="16dp" />
+        <TextView
+
+            android:padding="4dp"
+            android:id="@+id/sendertext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            android:layout_margin="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/sendertimer"
+            android:inputType="textLongMessage|textMultiLine"
+            android:maxWidth="270dp"
+            android:minWidth="50dp"
+            android:text="textview"/>
+        <TextView
+            android:id="@+id/sendertimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12:00pm"
+            android:textSize="10dp"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/sendergideline3"/>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>

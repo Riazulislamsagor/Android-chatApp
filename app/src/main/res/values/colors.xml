@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="purple200">#FFBB86FC</color>
+    <color name="purple500">#FF6200EE</color>
+    <color name="purple700">#FF3700B3</color>
+    <color name="teel700">#FF018786</color>
+    <color name="teel200">#FF03DAC5</color>
+    <color name="colorprimary">#0b6156</color>
+    <color name="colorprimarydark">#095049</color>
+    <color name="coloraccent">#03DAC5</color>
+    <color name="lightgray">#EDEDED</color>
+    <color name="whatsappcolor">#0b6156</color>
+    <color name="red">#870632</color>
+    <color name="statusbackground">#03A9F4</color>
+    <color name="chatbackground">#8BC34A</color>
+    <color name="fbcolor">#3c5793</color>
+    <color name="lightgreen">#e5ffcc</color>
+</resources>

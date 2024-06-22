@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#084A42"
+    tools:context=".SignInActivity">
+
+    <ImageView
+        android:id="@+id/settingback"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_back_24"
+        tools:ignore="DuplicateIds" />
+
+    <LinearLayout
+        android:id="@+id/linearseting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/settingback"
+        android:gravity="center">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userId"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/photocamera"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="DuplicateIds"
+            app:tint="@color/white" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/settingdown"
+        android:layout_below="@id/linearseting"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="name :"
+            android:textSize="15dp"
+            android:textColor="@color/white"/>
+        <EditText
+            android:id="@+id/settinguser"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:padding="10dp"
+        android:id="@+id/l"
+        android:layout_below="@+id/settingdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About :"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            />
+        <EditText
+            android:id="@+id/settingabout"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_marginBottom="5dp"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/l"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        >
+
+        <TextView
+            android:id="@+id/settingsave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="10dp"
+            android:text="Save"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_below="@id/l"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/linearbg"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_marginTop="110dp"
+                android:src="@drawable/baseline_lock_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginTop="110dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Privacy Policy   "
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="3dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:src="@drawable/baseline_privacy_tip_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About Us            "
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="3dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:src="@drawable/baseline_supervised_user_circle_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Invite a Friends"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:src="@drawable/baseline_notifications_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notifications      "
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="3dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:src="@drawable/baseline_question_mark_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Helps                   "
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
